@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 19th Birthday Abdullah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader-box">
+      <span class="loader-heart" aria-hidden="true"></span>
+      <p>Loading birthday magic...</p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="music.mp3.wav" preload="auto" loop></audio>
+  <audio id="clickSound" src="sounds/click.mp3" preload="auto"></audio>
+  <audio id="hoverSound" src="sounds/hover.mp3" preload="auto"></audio>
+  <audio id="chimeSound" src="sounds/chime.mp3" preload="auto"></audio>
+  <audio id="typeSound" src="sounds/typewriter.mp3" preload="auto"></audio>
+  <div class="audio-controls" aria-label="Audio controls">
+    <button class="audio-btn music-toggle" id="musicToggle" type="button" aria-label="Play background music">
+      <span class="music-icon" aria-hidden="true">&#9834;</span>
+      <span class="music-text">Play Music</span>
+    </button>
+    <button class="audio-btn mute-toggle" id="muteToggle" type="button" aria-label="Mute all sound">
+      <span class="mute-icon" aria-hidden="true">SFX</span>
+      <span class="mute-text">Sound On</span>
+    </button>
+  </div>
+
+  <div class="sky" aria-hidden="true">
+    <span class="cloud cloud--one"></span>
+    <span class="cloud cloud--two"></span>
+    <span class="cloud cloud--three"></span>
+    <span class="star star--one"></span>
+    <span class="star star--two"></span>
+    <span class="star star--three"></span>
+    <span class="star star--four"></span>
+    <span class="star star--five"></span>
+    <span class="star star--six"></span>
+    <span class="star star--seven"></span>
+    <span class="star star--eight"></span>
+    <span class="firefly firefly--one"></span>
+    <span class="firefly firefly--two"></span>
+    <span class="firefly firefly--three"></span>
+    <span class="firefly firefly--four"></span>
+    <span class="heart heart--one"></span>
+    <span class="heart heart--two"></span>
+    <span class="heart heart--three"></span>
+    <span class="moon"></span>
+  </div>
+
+  <main>
+    <section class="intro screen" id="intro">
+      <div class="pixel-card intro-card">
+        <p class="tag">June 6</p>
+        <h1>Happy Birthday Abdullah</h1>
+        <p class="subtitle typewriter" data-typewriter="Happy 19th handsome~"></p>
+
+        <div class="countdown" aria-live="polite">
+          <p class="countdown-label">Birthday countdown</p>
+          <div class="countdown-grid" id="countdown">
+            <span><strong id="days">00</strong>Days</span>
+            <span><strong id="hours">00</strong>Hours</span>
+            <span><strong id="minutes">00</strong>Minutes</span>
+            <span><strong id="seconds">00</strong>Seconds</span>
+          </div>
+        </div>
+
+        <div class="warning-box">
+          <p>This website contains:</p>
+          <ul>
+            <li>Birthday wishes</li>
+            <li>Excessive appreciation</li>
+            <li>Mild emotional damage</li>
+            <li>Zero refunds</li>
+          </ul>
+          <p>Proceed at your own risk.</p>
+        </div>
+
+        <button class="pixel-btn" id="enterBtn" type="button">Enter</button>
+      </div>
+    </section>
+
+    <section class="section facts reveal" id="facts">
+      <div class="section-heading">
+        <p class="tag">Abdullah Facts</p>
+        <h2>Important game stats</h2>
+      </div>
+
+      <div class="fact-grid">
+        <article class="pixel-card fact-card">
+          <span>Fact #1</span>
+          <p>You are officially older.</p>
+        </article>
+        <article class="pixel-card fact-card">
+          <span>Fact #2</span>
+          <p>You are also officially wiser.</p>
+          <small>(Results still pending.)</small>
+        </article>
+        <article class="pixel-card fact-card">
+          <span>Fact #3</span>
+          <p>You remain annoyingly easy to care about.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <p class="tag">Memory Lane</p>
+        <h2>Saved moments</h2>
+      </div>
+
+      <div class="memory-grid">
+        <figure class="pixel-card memory-card">
+          <img src="images/call.jpg" alt="Call duration screenshot">
+          <figcaption>We were literally just existing and somehow making memories I'd never forget fr.</figcaption>
+        </figure>
+        <figure class="pixel-card memory-card">
+          <img src="images/confess.jpg" alt="Screenshot of Abdullah confessing">
+          <figcaption>Still one of my favourite days.</figcaption>
+        </figure>
+        <figure class="pixel-card memory-card">
+          <img src="images/collage.jpg" alt="Photo collage of shared memories">
+          <figcaption>Proof that life was actually pretty fun with you around.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <article class="pixel-card letter-card">
+        <p class="tag">Tiny Letter</p>
+        <h2>Dear Abdullah</h2>
+        <p>Life got busy.</p>
+        <p>We got busy, and somehow that's how our story ended.</p>
+        <p>Not because we stopped caring, just because life had other plans.</p>
+        <p>Which is honestly a very boring reason compared to what Netflix would've written.</p>
+      </article>
+    </section>
+
+    <section class="section quiz-section reveal">
+      <div class="section-heading">
+        <p class="tag">Birthday Quiz</p>
+        <h2>Definitely difficult questions</h2>
+      </div>
+
+      <div class="quiz-list">
+        <article class="pixel-card quiz-card">
+          <h3>Who deserves an amazing birthday?</h3>
+          <div class="options">
+            <button type="button">Abdullah</button>
+            <button type="button">Habibi</button>
+            <button type="button">Handsomest boi in the whole world</button>
+            <button type="button">All of the above</button>
+          </div>
+          <p class="answer" aria-live="polite">Correct.</p>
+        </article>
+
+        <article class="pixel-card quiz-card">
+          <h3>Who spent time making an entire website?</h3>
+          <div class="options">
+            <button type="button">A baddie</button>
+            <button type="button">Prettiest gal in yo life</button>
+            <button type="button">The coolest girl in yo life</button>
+            <button type="button">All of the above</button>
+          </div>
+          <p class="answer" aria-live="polite">Also correct.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <article class="pixel-card talk-card">
+        <p class="tag">Real Talk</p>
+        <p>I know we're not what we used to be, but if there's one thing that never changed, it's how much I respect and appreciate you.</p>
+        <p>Some people become important parts of your life and even when the chapter ends, you don't stop being grateful they were there.</p>
+        <p>You're one of those people for me.</p>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <article class="pixel-card wish-card">
+        <p class="tag">Final Birthday Wish</p>
+        <h2>I hope this year is kind to you.</h2>
+        <p>I hope your work pays off.</p>
+        <p>I hope your plans work out.</p>
+        <p>I hope you laugh a lot.</p>
+        <p>I hope you find reasons to be proud of yourself.</p>
+        <p>And I hope you always remember that somewhere in the world, there's a person who genuinely wants good things for you.</p>
+
+        <button class="pixel-btn" id="finalBtn" type="button">One Last Thing...</button>
+      </article>
+    </section>
+
+    <section class="final-message" id="finalMessage" aria-live="polite">
+      <div class="pixel-card final-card">
+        <p>No secret message.</p>
+        <p>No hidden agenda.</p>
+        <p>No attempt to kidnap you emotionally.</p>
+        <p>Just a birthday wish for a boy I once loved, a person I still care about, and someone I'll always be happy to have known.</p>
+        <h2>Happy Birthday Habibi &#10084;&#65039;</h2>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
